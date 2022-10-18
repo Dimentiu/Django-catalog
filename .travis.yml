@@ -1,6 +1,6 @@
 language: python
 python:
-  - "3.10.6"
+  - "3.10"
 env:
   - DJANGO_SECRET_KEY=django-insecure
 install:
