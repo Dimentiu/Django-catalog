@@ -1,9 +1,9 @@
 from django.urls import path
 
-from . import views
+from .views import base, triangle_calculate
 
 app_name = 'catalog'
 urlpatterns = [
-    path('', views.InputForm),
-   
+    path('', base, name="base"),
+    path('catalog/', triangle_calculate, name='index'),
 ]
