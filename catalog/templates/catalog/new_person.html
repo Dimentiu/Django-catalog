@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Create new person</title>
+</head>
+<body>
+    <h1>New person</h1>
+    <form action="{% url 'catalog:new_person' %}" method="post">
+    {% csrf_token %}
+    {{ person_form.as_p }}
+    <input type="submit" value="Save">
+    </form>
+</body>
+</html>
