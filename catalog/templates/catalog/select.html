@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+</head>
+
+<body>
+   <h1>Information</h1>
+   <ul>
+        {% for obj in users %}
+            <li><a href="{% url 'catalog:update' pk=obj.pk %}">{{ obj }}</a></li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
